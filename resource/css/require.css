@@ -1,0 +1,187 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;} 
+
+body {
+    font-size: 12px;
+    font-family: 'Microsoft YaHei';
+    min-width: 1200px;
+}
+.header {
+	position: absolute;
+	top: 0px;
+	z-index: 5;
+	width: 100%;
+
+}
+.header .inner {
+	position: relative;
+	width: 800px;
+	margin-top: 30px; 
+}
+
+.header .logo {
+	background: url(../img/logo.png);
+	height: 48px;
+    width: 128px;
+    float: left;
+}
+
+.header .nav {
+    float: right;
+    margin-top: 3px;
+    overflow: hidden;
+}
+
+.header .nav .cur {
+	background: #2f9339;
+	color: #fff;
+}
+
+.header .nav a {
+	border-radius: 4px;
+	color: #fff;
+    float: left;
+    margin-left: 6px;
+    padding: 7px 17px 9px;
+    text-decoration: none;
+}
+
+.reg {
+	border:1px solid #fff;
+}
+
+.banner {
+	height: 700px;
+	position: relative;
+}
+
+.slide {
+	height: 320px;
+	left: 0;
+	top: 96px;
+}
+
+.slide-box {
+    height: 290px;
+    margin: 0 auto
+}
+
+.slide, .slide_box {
+	position: absolute;
+	overflow: hidden;
+}
+
+.banner .banner-bg img {
+	width: 80%;
+}
+
+.banner .banner-bg, .banner .slide, .banner .banner-bg img {
+	width: 100%;
+}
+
+.banner .banner-bg {
+	height: auto;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+}
+ 
+ .slide-box div {
+    float: left;
+    text-align: center;
+    width: 100%
+}
+
+.loginbar {
+	position: absolute;
+	color: #fff;
+    font-size: 12px;
+    font-family: 'Microsoft YaHei';
+    height: 260px;
+    right: 0;
+    top: 220px;
+    width: 290px;
+}
+
+.loginbar .form {
+	color: #c7c7c7;
+    margin-left: 35px;
+    width: 220px;
+    z-index: 1;
+}
+
+.loginbar .form .ipt {
+	background: #fff;
+    border: none;
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    padding: 3px 5px;
+    width: 140px;
+}
+
+.loginbar .form .item {
+	background: #fff;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+.loginbar .form .username {
+    border: none;
+}
+
+.loginbar .form .item {
+    background: #fff;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+
+.loginbar .form .username {
+    border: none;
+}
+
+.loginbar .form .captcha {
+    display: none
+}
+
+.loginbar .form .label {
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    text-align: right;
+    width: 60px
+}
+
+.loginbar .form .ipt {
+    background: #fff;
+    border: none;
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    padding: 3px 5px;
+    width: 140px;
+}
+
+.loginbar .action .btn {
+    background: #2f9339;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-weight: 700;
+    font-family: 'Microsoft YaHei';
+    height: 38px;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+    width: 220px
+}
+
+.loginbar .action .captcha-img {
+    display: none;
+    float: left;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 1px;
+    width: 90px
+}
