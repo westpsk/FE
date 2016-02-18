@@ -9,6 +9,11 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 100%;
     font-weight: 400
 }
+* {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
 :focus {
     outline: none
 }
@@ -86,7 +91,7 @@ h1,h2,h3,h4,h5,h6 {
 .slide {
     height: 320px;
     left: 0;
-    top: 170px;
+    top: 91px;
 }
 
 .slide-box {
@@ -134,7 +139,7 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Microsoft YaHei';
     height: 260px;
     right: 0;
-    top: 180px;
+    top: 127px;
     width: 290px;
 }
 
@@ -202,7 +207,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .feature .inner {
-    height:391px;
     width:1200px;
     margin:0 auto;
     padding: 0 0 50px;
@@ -221,6 +225,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .ad img {
+    display: block;
     width:100%;
 }
 
