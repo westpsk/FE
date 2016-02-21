@@ -1,0 +1,20 @@
+.slide {
+	width: 404px;
+	height: 500px;
+	margin: 0 auto;
+}
+
+.slide_bg {
+	position: relative;
+	overflow: hidden;
+}
+
+.slide_b {
+	position: relative;
+	width: 2020px;
+	height: 500px;
+	left: -404px;
+}
+.slide_b img {
+	float: left;
+}

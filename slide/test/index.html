@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="http://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.min.js"></script>
+</head>
+<body>
+	<div class='slide'>
+		<div class="pic" id="p1"></div>
+		<div class="pic middle" id="p2"></div>
+		<div class="pic" id="p3"></div>
+	</div>
+	<script type="text/javascript">
+		function slide(){
+			document.getElementById("p1").onclick=function(){
+
+				 $(".pic").removeClass("right left middle");
+				 $("#p1").addClass("left");
+				 $("#p2").addClass("middle");
+				 $("#p3").addClass("right");
+
+			};
+			document.getElementById("p2").onclick=function(){
+
+				 $(".pic").removeClass("right left middle");
+				 $("#p2").addClass("left");
+				 $("#p3").addClass("middle");
+				 $("#p1").addClass("right");
+			};
+			document.getElementById("p3").onclick=function(){
+				 $(".pic").removeClass("right left middle");
+
+				 $("#p3").addClass("left");
+				 $("#p1").addClass("middle");
+				 $("#p2").addClass("right");
+			};
+		}
+		slide();
+	</script>
+</body>
+</html>

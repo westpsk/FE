@@ -1,0 +1,52 @@
+.slide {
+	position: relative;
+	height: 300px;
+
+}
+
+.pic {
+	position: absolute;
+	height: 300px;
+	display: inline;
+}
+
+#p1{
+	background: red;
+}
+#p2{
+	background: blue;
+}
+#p3{
+	background: yellow;
+}
+/*点击之后 */
+
+
+.cur {
+	width: 30%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.left {
+	width: 30%;
+	left: 0;
+
+}
+
+.middle {
+
+	width: 30%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.right {
+
+	width: 30%;
+	right: 0;
+
+}
+
