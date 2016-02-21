@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页－叫座</title>
+	<link rel="stylesheet" type="text/css" href="resource/css/require.css">
+	<script src="resource/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+		var app = {
+			ScrollDirection: function(fn){
+				var beforeScrollTop = document.body.scrollTop,
+			        fn = fn || function() {};
+			    window.addEventListener("scroll", function() {
+			        var afterScrollTop = document.body.scrollTop,
+			            delta = afterScrollTop - beforeScrollTop;
+			        if( delta === 0 ) return false;
+			        fn( delta > 0 ? "down" : "up" );
+			        beforeScrollTop = afterScrollTop;
+			    }, false);
+			},
+
+			BottomJumpPage: function () {
+	            var scrollTop = $(this).scrollTop();
+	            console.dir(scrollTop);
+	            var scrollHeight = $(document).height();
+	            var windowHeight = $(this).height();
+	            console.dir(windowHeight+'-'+scrollHeight);
+	            if (scrollTop == 0) {  //滚动到头部部执行事件
+	            	console.dir("我到头部了");
+	            	$(".header").removeClass("fixed");
+	            	$(".header").attr("style","position: absolute; top: 0px; transition: 1s;");
+	            	$(".header .nav a").css("color","#fff");
+
+	            }
+	            else {
+	            	console.dir("改变样式");
+	            	$(".header").addClass("fixed");
+	            	$(".header").attr("style","position: fixed; top: 0px; transition: 1s;");
+	            	$(".fixed .nav a ").css("color","#000");
+	            	$(".nav .cur").css("color","#fff");
+	            	$(".header").css("boder-bottom","solid red");
+	            }
+	 		}
+
+		}
+		$(window).scroll(app.BottomJumpPage);
+	</script>
+</head>
+<body>
+	<div class='body-wrapper'>
+		<div class='wrapper'>
+			<div class='header'>
+				<div class="inner">
+					<a href="#" class="logo"></a>
+					<div class="nav">
+						<a href="#" class="cur">首页</a>
+						<a href="#">叫座app</a>
+						<a href="#">活动</a>
+						<a href="#">帮助与反馈</a>
+						<a href="#" class="reg">立即注册</a>
+					</div>
+				</div>
+			</div>
+			<div class="banner">
+				<div class="banner-bg">
+					<img src="resource/img/bg.jpg">
+				</div>
+				<div class="slide">
+					<div class="slide-box">
+						<div>
+							<img src="resource/img/banner3.png">
+						</div>
+					</div>
+				</div>
+				<div class="inner">
+					<div class="loginbar">
+						<div class="bg"></div>
+						<form action="#" method="psot">
+							<h2 class="title">登录叫座</h2>
+							<div class="form">
+								<div class="item username">
+									<label for class="label">登录名：</label>
+									<input name="username" type="text" placeholder="邮箱/手机号" class="ipt" style="box-shadow: rgb(255, 255, 255) 0px 0px 0px 1000px inset;">
+								</div>
+								<div class="item">
+									<label for class="label">密　码：</label>
+									<input name="pwd" type="password" placeholder="登录密码" class="ipt" style="box-shadow: rgb(255, 255, 255) 0px 0px 0px 1000px inset;">
+								</div>
+							</div>
+						</form>
+						<div class="action">
+							<button type="submit" class="btn">登 录</button>
+							<a href="#" class="forget-pwd">忘记密码？</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="feature clearfix">
+				<div class="inner">
+					<div class="content"></div>						
+				</div>
+			</div>
+			<div class="ad clearfix">
+				<img src="resource/img/index_11.jpg">
+
+			</div>
+
+		</div>
+	
+		<div class="footer">
+			<p class="contact">
+				商务合作：400 669 3600
+				<span></span>
+				Email：pansongkui@360.cn
+			</p>
+			<p>Copyright © 2014-2015 360.CN All Rights Reserved.</p>
+			<br>
+			<p>叫座平台 版权所有</p>
+		</div>
+	</div>
+</body>
+</html>
